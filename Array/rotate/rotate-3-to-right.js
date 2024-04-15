@@ -16,3 +16,6 @@ for (let ind = 0; ind < arr.length; ind++) {
 }
 
 console.log(arr)
+
+
+// n*3

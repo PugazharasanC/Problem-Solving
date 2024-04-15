@@ -1,11 +1,12 @@
 let primeArr = [false, false]
 let arr = []
 let count = 0
-for (let i = 2; i < 1000; i++) {
+let till = 10000
+for (let i = 2; i < till; i++) {
     if (primeArr[i] == undefined) {
         primeArr[i] = true;
         arr.push(i)
-        for (let j = i * i; j < 1000; j += i) {
+        for (let j = i * i; j < till; j += i) {
             primeArr[j] = false
             count++
         }
@@ -13,4 +14,4 @@ for (let i = 2; i < 1000; i++) {
 }
 
 console.log(count)
-console.log(...arr)
+console.log(arr.join("\t"))
